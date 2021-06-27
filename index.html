@@ -5,35 +5,135 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="style.css.map">
+    
 </head>
 <body>
-    <div class="button">
-        <a>
-            <span>Upload Now</span>
-            <svg class="load" version="1.1"x="0px" y="0px" width="30px" height="30px" viewBox="0 0 40 40" enable-background="new 0 0 40 40">
-                <path opacity="0.3" fill="#fff" d="M20.201,5.169c-8.254,0-14.946,6.692-14.946,14.946c0,8.255,6.692,14.946,14.946,14.946
-                s14.946-6.691,14.946-14.946C35.146,11.861,28.455,5.169,20.201,5.169z M20.201,31.749c-6.425,0-11.634-5.208-11.634-11.634
-                c0-6.425,5.209-11.634,11.634-11.634c6.425,0,11.633,5.209,11.633,11.634C31.834,26.541,26.626,31.749,20.201,31.749z"/>
-                <path fill="#fff" d="M26.013,10.047l1.654-2.866c-2.198-1.272-4.743-2.012-7.466-2.012h0v3.312h0
-                C22.32,8.481,24.301,9.057,26.013,10.047z">
-                <animateTransform attributeType="xml"
-                attributeName="transform"
-                type="rotate"
-                from="0 20 20"
-                to="360 20 20"
-                dur="0.5s"
-                repeatCount="indefinite"/>
-                </path>
-            </svg>
-            <svg class="check" xmlns="http://www.w3.org/2000/svg" width="30" height="30" viewBox="0 0 24 24">
-                <path d="M9 16.17L4.83 12l-1.42 1.41L9 19 21 7l-1.41-1.41z"/>
-            </svg>
-        </a>
-        <div>
-            <span></span>
+    <div class="container">
+        <div class="components">
+          
+          <div class="switch">
+            <div class="switch__1">
+              <input id="switch-1" type="checkbox">
+              <label for="switch-1"></label>
+            </div>
+            
+            <div class="switch__2">
+              <input id="switch-2" type="checkbox" checked>
+              <label for="switch-2"></label>
+            </div>
+          </div>
+          
+          <div class="checkbox">
+            <div class="checkbox__1">
+              <input id="checkbox-1" type="checkbox">
+              <label for="checkbox-1">
+                <i class="material-icons">done</i></label>
+            </div>
+            <div class="checkbox__2">
+              <input id="checkbox-2" type="checkbox" checked>
+              <label for="checkbox-2">
+                <i class="material-icons">done</i></label>
+            </div>
+          </div>
+          
+          <div class="radio">
+            <div class="radio__1">
+              <input id="radio-1" type="radio"  name="radio" value="1">
+              <label for="radio-1"></label>
+            </div>
+            
+            <div class="radio__2">
+              <input id="radio-2" type="radio" name="radio" value="2" checked>
+              <label for="radio-2"></label>
+            </div>
+          </div>
+          
+          <div class="btn btn__primary"><p>Button</p></div>
+          <div class="btn btn__secondary"><p>Button</p></div>
+          
+          <div class="clock">
+            <div class="hand hours"></div>
+            <div class="hand minutes"></div>
+            <div class="hand seconds"></div>
+            <div class="point"></div>
+            <div class="marker">
+              <span class="marker__1"></span>
+              <span class="marker__2"></span>
+              <span class="marker__3"></span>
+              <span class="marker__4"></span>
+            </div>
+          </div>
+          
+          <div class="chip">
+            <div class="chip__icon">
+              <ion-icon name="color-palette"></ion-icon></div>
+            <p>Neumorphic Design</p>
+            <div class="chip__close">
+              <ion-icon name="close"></ion-icon>
+            </div>
+          </div>
+          
+          <div class="circle">
+            <span class="circle__btn">
+              <ion-icon class="pause " name="pause"><i class="fas fa-pause"></i></ion-icon>
+              <ion-icon class="play" name="play"><i class="fas fa-play"></i></ion-icon>
+            </span>
+            <span class="circle__back-1"></span>
+            <span class="circle__back-2"></span>
+          </div>
+          
+          <div class="form">
+            <input type="text" class="form__input" placeholder="Type anything...">
+          </div>
+          
+          <div class="search">
+            <input type="text" class="search__input" placeholder="Search...">
+            <div class="search__icon">
+              <ion-icon name="search"></ion-icon>
+            </div>
+          </div>
+          
+          <div class="segmented-control">
+            
+            <input type="radio" name="radio2" value="3" id="tab-1" checked/>
+            <label for="tab-1" class= "segmented-control__1">
+              <p>Tab 1</p></label>
+            
+            <input type="radio" name="radio2" value="4" id="tab-2" />
+            <label for="tab-2" class= "segmented-control__2">
+              <p>Tab 2</p></label>
+            
+            <input type="radio" name="radio2" value="5" id="tab-3" />
+            <label for="tab-3" class= "segmented-control__3">
+              <p>Tab 3</p></label>
+            
+            <div class="segmented-control__color"></div>
+          </div>
+          
+          <div class="icon">
+            <div class="icon__home">
+              <ion-icon name="home"></ion-icon></div>
+            <div class="icon__account">
+              <ion-icon name="person"></ion-icon></div>
+            <div class="icon__settings">
+              <ion-icon name="settings"></ion-icon></div>
+          </div>
+          
+          <div class="slider">
+            <div class="slider__box">
+              <span class="slider__btn" id="find"></span>
+              <span class="slider__color"></span>
+              <span class="slider__tooltip">50%</span>
+            </div>
+          </div>
         </div>
-    </div>
+        <a href="https://dribbble.com/myacode" class="dribbble" target="_blank"><ion-icon name="logo-dribbble"></ion-icon></a>
+      </div>
+
+
     <script src="index.js"></script>
 </body>
 </html>
